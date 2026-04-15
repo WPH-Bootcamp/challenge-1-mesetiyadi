@@ -3,49 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge-1: Pantura Explorer</title>
+    <title>Pantura Explorer | Challenge-1</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="container">
-            <h1 class="logo">Pantura<span>Hub</span></h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Wilayah</a></li>
-                    <li><a href="#" class="btn-cta">Gabung Komunitas</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="main-header">
+        <nav class="container nav-wrapper">
+            <div class="logo">
+                PANTURA<strong>HUB</strong>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#wilayah">Wilayah</a></li>
+                <li><a href="#" class="btn-cta">Daftar</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Navigasi Tanpa Batas di Jalur Pantura</h2>
-                <p>Memahami titik temu antara Sisi Utara dan Sisi Selatan melalui satu pembatas jalan yang ikonik.</p>
-                <a href="#explore" class="btn-primary">Jelajahi Sekarang</a>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1>Satu Pembatas, Dua Dunia.</h1>
+                <p>Navigasi presisi di jalur Pantura. Memahami potensi Sisi Utara dan Sisi Selatan dengan data akurat.</p>
+                <div class="hero-actions">
+                    <a href="#wilayah" class="btn-primary">Pelajari Wilayah</a>
+                </div>
             </div>
         </section>
 
-        <section id="explore" class="features">
+        <section id="wilayah" class="features">
             <div class="container">
-                <div class="card">
-                    <h3>Sisi Utara</h3>
-                    <p>Eksplorasi pesisir, pelabuhan, dan potensi maritim yang membentang di atas pembatas jalan.</p>
-                </div>
-                <div class="card">
-                    <h3>Sisi Selatan</h3>
-                    <p>Pusat niaga, pemukiman, dan denyut nadi ekonomi di bawah garis pembatas jalan.</p>
+                <header class="section-header">
+                    <h2>Zonasi Jalur Pantura</h2>
+                    <p>Pembagian strategis berdasarkan letak geografis pembatas jalan.</p>
+                </header>
+
+                <div class="grid-container">
+                    <article class="card">
+                        <div class="card-badge">Utara</div>
+                        <h3>Sisi Utara</h3>
+                        <p>Wilayah di atas pembatas jalan. Fokus pada ekonomi maritim, pelabuhan, dan akses logistik laut Jawa.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-badge">Selatan</div>
+                        <h3>Sisi Selatan</h3>
+                        <p>Wilayah di bawah pembatas jalan. Didominasi pemukiman padat, pusat kuliner, dan distribusi darat trans-Jawa.</p>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Challenge-1. Didesain untuk performa maksimal.</p>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Eko Mining Pro. Dibuat dengan standar HTML5 & CSS3.</p>
+        </div>
     </footer>
 
 </body>
